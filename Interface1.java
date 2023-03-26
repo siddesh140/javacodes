@@ -14,9 +14,9 @@ class Test implements Abc{
 		System.out.println("m3 Method");
 	}
 }
-class Interface{
+class Interface1{
 	public static void main(String[] args) {
-		Test t=new Test();
+		Abc t=new Test();
 		t.m1();
 		t.m2();
 		t.m3();

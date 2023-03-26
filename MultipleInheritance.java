@@ -1,25 +1,19 @@
 //Program to achieve multiple inheritance
-
-interface Abc
-{
-    public void show();
+interface Abc{
+	public void show();
 }
-
-class Pqr
-{
-    static int i=20;
+class Pqr{
+	static int i=20;
 }
-
-class Xyz extends Pqr implements Abc { 
-    public void show()
-{
-    System.out.println("I m in abc");
-}
-
-public static void main(String[] args){
-    Abc a=new Xyz();
-    a.show();
-    System.out.println(i);
-}
-
+class MultipleInheritance extends Pqr implements Abc{
+	public void show(){
+		System.out.println("I am in Abc");
+	}
+	public static void main(String[] args) {
+		Abc a;
+		MultipleInheritance m=new MultipleInheritance();
+		a=m;
+		a.show();
+		System.out.println(i);
+	}
 }
